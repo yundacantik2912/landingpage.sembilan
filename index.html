@@ -5,7 +5,8 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>SMK NEGERI 9 MEDAN</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet"
@@ -23,29 +24,41 @@
 <body>
   <!-- Navbar -->
   <section class="header">
-    <nav>
-      <a href="index.html"><img src="img/logo9.jfif"></a>
-      <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
-        <ul>
-          <li><a href="#profil">Profil Sekolah</a></li>
-          <li><a href="#jurusan">Jurusan</a></li>
-        <li><a href="#ekskul">Ekstrakulikuler</a></li>
-        <li><a href="#fasilitas">Fasilitas</a></li>
-        </ul>
-      </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary ">
+        <a class="navbar-brand" href="index.html"><img src="img/logo9.jfif"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#profil">Profil Sekolah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jurusan">Jurusan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fasilitas">Fasilitas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#kontak">Kontak</a>
+              </li>
+                
 
+            </ul>
+        </div>
+    </nav>
+</section>
      <!-- Banner -->
      <div class="text-box">
       <h1>SMK NEGERI 9 MEDAN</h1>
       <p>SMK BISA SMK HEBAT !</p>
-      <a href="/about.html" class="hero-btn">Selengkapnya</a>
+      <!-- <a href="/about.html" class="hero-btn">Selengkapnya</a> -->
     </div>
   </section>
 
  <!-- Profil Sekolah -->
+ 
  <div class="container text-center">
   <div class="row ">
     <div class="col">
@@ -62,9 +75,28 @@
           dilakukan selama 6 hari.</p>
       </div>
     </div>
-    <div class="row2">
+    <h2 class="w3-center">GALERY</h2>
+
+    <div class="w3-content w3-section" style="max-width:100%px">
+      <img class="mySlides" src="img/aula.jpg" style="width:100%">
+      <img class="mySlides" src="img/aula.jpg" style="width:100%">
+      <img class="mySlides" src="img/labbcf.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)" style="width: 20%; margin: 20px;">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)" style="width: 20%; margin: 20px;">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)" style="width: 20%; margin: 20px;">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)" style="width: 20%; margin: 20px;">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)" style="width: 20%; margin: 20px;">3</button> 
+</div>
+    </div>
+    
+    
       <div class="course-col2">
-        <h3 id="visi">VISI</h3>
+        <p><h3 id="visi">VISI</h3>
         <p>Menghasilkan Sumber Daya Manusia bermatabat yang Cakap, kompeten dan berjiwa entrepeneur yang berakhlak mulia serta mampu bersaing di era industri.</p>
       </div>
     
@@ -79,6 +111,14 @@
           <br>7. Melaksanakan pembinaan karakter dan IMTAQ secara berkelanjutan.
           <br>8. Melaksanakan kerjasama yang harmonis dengan masyarakat dan DU/DI dalam rangka pemasaran tamatan.</p>
       </div>
+      <div class="course-col2">
+        <h3>TUJUAN</h3>
+        <br> 1. Menyiapkan tamatan yang memiliki iman dan taqwa, berkepribadian unggul dan mampu mengembangkan diri dengan penyelenggaraan diklat bertaraf nasional.
+
+        <br> 2. Menghasilkan tamatan yang kompeten, profesional dan mampu mandiri untuk memenuhi kebutuhan pasar kerja baik tingkat lokal, nasional maupun internasional.
+        
+        <br> 3. Menjadi salah satu sumber informasi IPTEK bagi industri-industri
+      </div>
     </div>
     
 
@@ -87,7 +127,7 @@
 
   <!-- Jurusan -->
   <section class="campus">
-    <h1 id="jurusan">Jurusan</h1>
+    <h1 id="jurusan">JURUSAN</h1>
     
     <div class="row">
       <div class="col-sm-4">
@@ -149,144 +189,76 @@
   </section>
 
 
-  <!--Ekstrakulikuler-->
-  <section class="course">
-    <h1 id="ekskul">Ekstrakulikuler</h1>
-
-    <div class="row1">
-      <div class="course-col1">
-        <h3>Web Development</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.</p>
-      </div>
-
-      <div class="course-col1">
-        <h3>Desain Graphis</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.</p>
-      </div>
-
-      <div class="course-col1">
-        <h3>Desain Graphis</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.</p>
-      </div>
-
-     
-      </div>
-    </div>
-  </section>
-
-
-
   <!--Fasilitas  -->
   <section class="fasilitas">
-    <h1 id="fasilitas">Fasilitas</h1>
-
-    <div class="row">
+    <h1 id="fasilitas">FASILITAS</h1>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="fasilitas-col">
+            <img src="img/taman.jpg">
+            <h3>  Taman</h3>
+            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+          </div>
+          </div>
       <div class="col-sm-4">
         <div class="fasilitas-col">
-          <img src="img/library.png">
-          <h3>Ruangan Perpustakaan</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <img src="img/aula.jpg">
+          <h3>Aula</h3>
+          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
         </div>
       </div>
       <div class="col-sm-4">
         <div class="fasilitas-col">
-          <img src="img/basketball.png">
-          <h3>Ruangan Bermain</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <img src="img/rperpus.jpg">
+          <h3>Perpustakaan</p></h3>
+          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
         </div>
       </div>
       <div class="col-sm-4">
         <div class="fasilitas-col">
-          <img src="img/cafeteria.png">
-          <h3>Ruangan Makan/Kantin</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <img src="img/kantin.jpg">
+          <h3>Kantin</h3>
+          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
         </div>
       </div>
+      <div class="col-sm-4">
+        <div class="fasilitas-col">
+          <img src="img/musholla.jpg">
+          <h3>  Musholla</h3>
+          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+        </div>
+      </div><div class="col-sm-4">
+        <div class="fasilitas-col">
+          <img src="img/labbcf.jpg">
+          <h3>Lab Broadcasting dan Perifilman</Label></h3>
+          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="fasilitas-col">
+          <img src="img/labps.jpg">
+          <h3>Lab Bahasa Jepang</h3>
+          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+        </div>
+      </div>
+        <div class="col-sm-4">
+          <div class="fasilitas-col">
+            <img src="img/rguru.jpg">
+            <h3>Ruangan Guru</h3>
+            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+          </div>
+    </div>
+    </div>
     </div>
 
   </section>
 
-  <!--Staff/tim-->
+  <!--profile yunda-->
   <div class="container fluid pt-5 pb-5 bg-light">
     <div class="container text-center">
       <h2 class="Tim" id="staff">Tim kami</h2>
       <p>Tim Pembuat Website SMK TI Bazma V.2.0</p>
       <div class="row">
-
-        <div class="col-md-3 text-center tim">
-          <img src="img/firman.png" class="rounded-circle mb-3">
-          <h4>Firmansyah</h4>
-          <p>Web Designer</p>
-          <p>
-            <a href="" class="social">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="" class="social">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="" class="social">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </p>
-        </div>
-
-        <div class="col-md-3 tex-center tim">
-          <img src="img/farhan.png" class="rounded-circle mb-3">
-          <h4>Farhan</h4>
-          <p>Content Creator</p>
-          <p>
-            <a href="" class="social">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="" class="social">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="" class="social">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </p>
-        </div>
-
-        <div class="col-md-3 tex-center tim">
-          <img src="img/hafiz.png" class="rounded-circle mb-3">
-          <h4>Hafiz Al-fitrah</h4>
-          <p>Web Designer</p>
-          <p>
-            <a href="" class="social">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="" class="social">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="" class="social">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </p>
-        </div>
-
-        <div class="col-md-3 tex-center tim">
-          <img src="img/wahyuda.png" class="rounded-circle mb-3">
-          <h4>Wahyuda</h4>
-          <p>Content Creator</p>
-          <p>
-            <a href="" class="social">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="" class="social">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="" class="social">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </p>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -303,13 +275,13 @@
     <div class="container py-5">
         <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
             <!-- <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Get In Touch</h5> -->
-            <h1 class="display-6 fw-medium fst-italic text-primary">Contact</h1>
+            <h1 class="campus" id="kontak">Contact</h1>
         </div>
         <div class="row g-5 mb-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="h-100">
                    <iframe
-width="500"
+width="360"
 height="450"
 frameborder="0"
 style="border:0"
@@ -337,80 +309,85 @@ allowfullscreen
 </div>
 </div>
 </div>
-  <footer class="footer">
-    <div class="container-footer">
-      <div class="row-footer">
-        <div class="footer-col">
-          <h4>ABOUT THIS SCHOOL</h4>
-          <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">baituzzakah pertamina</a></li>
-            <li><a href="#">Carrers</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>EDUCATION</h4>
-          <ul>
-            <li><a href="#">literature teacher</a></li>
-            <li><a href="#">student</a></li>
-            <li><a href="#">chef</a></li>
-            <li><a href="#">IT teacher</a></li>
-            <li><a href="#">math teacher</a></li>
-            <li><a href="#">art teacher</a></li>
-            <li><a href="#">internship theacher</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>GUIDE AND HELP</h4>
-          <ul>
-            <li><a href="#">Care</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and Condition</a></li>
-            <li><a href="#">Mitra</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>FOLLOW US ON</h4>
-          <div class="social-media">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+<div class="container-fluid bg-dark footer py-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+      <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+              <h4 class="text-primary mb-4">Contact</h4>
+              <p class="mb-2">
+                  <i class="fa fa-envelope text-primary me-3"></i>
+                  <a href="mailto:aprilliaputri848@gmail.com" class="site-footer-link text-white">
+                      ayundarifarah.com</a></p>
+                      <p class="mb-2">
+                          <i class="fa fa-phone-alt text-primary me-3"></i>
+                          <a href="tel: 090-080-0760" class="site-footer-link text-white">
+                              +62 812-6302-6937</a></p>
+                              <p class="mb-2">
+                                  <i class="fa fa-map-marker-alt text-primary me-3"></i>
+                                  <a href="alamat: Jl. Patriot No.20 A, Lalang, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20123" class="site-footer-link text-white">
+                                      Jl. Patriot No.20 A, Lalang, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20123</a></p>
           </div>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-  <div class="fixed-footer">
-    <div class="container">2023 SMK TI BAZMA SCH.ID</div>
-  </div>
-
-
+          
+          <div class="col-lg-3 col-md-6">
+              <h4 class="text-primary mb-4">Hours</h4>
+              <p class="mb-1">Senin - Sabtu</p>
+              <h6 class="text-light">07:00 am - 18:00 pm</h6>
+              <p class="mb-1">Minggu</p>
+              <h6 class="text-light">Closed</h6>
+          </div>
   <!-- javascript for toggle menu -->
-  <script>
-
-    var navLinks = document.getElementById("navLinks");
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
     function showMenu() {
-      navLinks.style.right = "0";
+        document.getElementById('navLinks').style.right = '0';
     }
+
     function hideMenu() {
-      navLinks.style.right = "-200px";
+        document.getElementById('navLinks').style.right = '-200px';
     }
+    var myIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+var slideIndex = 1;
+showDivs(slideIndex);
 
-  </script>
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
 </body>
 
 </html>
