@@ -5,34 +5,59 @@
   box-sizing: border-box;
   line-height: 1.5;
 }
+.mySlides {display:none}
+ /* Gaya kustom untuk navbar */
+ .navbar {
+  z-index: 2;
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: left;
+
+}
+.navbar-brand img {
+  width: 70px; /* Lebar logo */
+  border-radius: 50%;
+}
+.navbar-toggler-icon {
+  color: #b9b0b0; /* Warna ikon toggle */
+}
+.navbar-nav .nav-link {
+  color: #9e9292; /* Warna teks link navbar */
+  flex-wrap: 1;
+  text-align: right;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffcc00; /* Warna teks link navbar saat hover */
+}
 
 /* Banner */
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../img/smk.jpg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../img/smk9.jpg");
   background-position: center;
   background-size: cover;
   position: relative
 }
 
 /* Navbar */
-nav {
+/* nav {
   display: flex;
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-nav img {
+/* nav img {
   width: 80px;
   border-radius: 50%;
-}
+} */
 
-.nav-links {
+/* .nav-links {
   flex-wrap: 1;
   text-align: right;
-}
+} */
 
 .nav-links ul li {
   list-style: none;
@@ -125,7 +150,7 @@ nav .fa {
 }
 
 /* Responsive Navbar */
-@media(max-width: 700px) {
+/* @media(max-width: 700px) {
   .text-box h1 {
     font-size: 50px;
     font-family: Phenomena;
@@ -143,7 +168,7 @@ nav .fa {
     top: 0;
     right: -200px;
     text-align: left;
-    z-index: 2;
+    z-index: 10;
     transition: 1s;
   }
 
@@ -159,7 +184,7 @@ nav .fa {
     padding: 30px;
   }
 
-}
+} */
 
 /* Deskripsi */
 .row {
@@ -396,7 +421,7 @@ a.social {
 }
 
 .footer {
-  background-color: rgba(27, 27, 27, 1);
+  background-color: rgb(202, 194, 194);
   padding: 70px 0;
 }
 
@@ -435,7 +460,7 @@ a.social {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   font-weight: 300;
-  color: #bbbbbb;
+  color: #000000;
   display: block;
   transition: all 0.3s ease;
 }
@@ -467,7 +492,7 @@ a.social {
 .fixed-footer {
   width: 100%;
   position: relative;
-  background: #333;
+  background: #ffffff;
   margin: 0 10px 10px 0;
   padding: 10px 0;
   color: rgba(255, 255, 255, 1);
